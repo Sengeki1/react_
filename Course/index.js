@@ -1,11 +1,17 @@
-function Page () {
+function Header () {
     return (
+        <header>
+            <nav>
+                <img src="React-icon.svg.png" width="50px"></img>
+            </nav>
+        </header>
+    )
+}
+
+function Page () { // component
+    return ( // JSX
         <div>
-            <header>
-                <nav>
-                    <img src="React-icon.svg.png" width="50px"></img>
-                </nav>
-            </header>
+            <Header />
             <h1>I'm excited to learn React</h1>
             <ol>
                 <li>I like learning new things</li>
