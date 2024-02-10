@@ -1,26 +1,45 @@
-function Header () {
+function Header () { // children Component
     return (
         <header>
-            <nav>
-                <img src="React-icon.svg.png" width="50px"></img>
+            <nav className="nav">
+                <img className="img" src="React-icon.svg.png"></img>
+                <ul className="nav-items">
+                    <li>Pricing</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
             </nav>
         </header>
     )
 }
 
-function Page () { // component
-    return ( // JSX
+function Footer () { // children Component
+    return (
+        <footer>
+            <p>© 2023 Soares development. All rights reserved</p>
+        </footer>
+    )
+}
+
+function MainContent() { // children Component
+    return (
         <div>
-            <Header />
             <h1>I'm excited to learn React</h1>
-            <ol>
+            <ol className="list">
                 <li>I like learning new things</li>
                 <li>It's best fit to learn react for a job
                 as a developer</li>
             </ol>
-            <footer>
-                <p>© 2023 Soares development. All rights reserved</p>
-            </footer>
+        </div>
+    )
+}
+
+function Page () { // Parent component
+    return ( // JSX
+        <div className="main">
+            <Header />
+            <MainContent />
+            <Footer />
         </div>
     )
 }
