@@ -1,14 +1,15 @@
 const page = (
-    <div className="header">
-        <form>
-            <label for="fname">First Name: </label>
-            <input type="text" id="fname" name="fname"></input><br></br>
-            <br></br>
-            <label for="lname">Last Name: </label>
-            <input type="text" id="lname" name="lanme"></input>
-        </form>
+    <div>
+        <img src="React-icon.svg.png" width="50px"></img>
+        <h1> Fun facts about React</h1>
+        <ul>
+            <li>Was first released in 2013</li>
+            <li>Was originally created by Jordan Walke</li>
+            <li>Has well over 100k stars on Github</li>
+            <li>Is maintained by Facebook</li>
+            <li>Powers thousands of enterprise apps, including mobile apps</li>
+        </ul>
     </div>
 )
 
-//document.getElementById("root").append(JSON.stringify(page))
 ReactDOM.render(page, document.getElementById("root"))
