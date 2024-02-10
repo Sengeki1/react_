@@ -1,17 +1,22 @@
-function TemporaryName() {
+function Page () {
     return (
         <div>
-            <img src="React-icon.svg.png" width="50px"></img>
-            <h1> Fun facts about React</h1>
-            <ul>
-                <li>Was first released in 2013</li>
-                <li>Was originally created by Jordan Walke</li>
-                <li>Has well over 100k stars on Github</li>
-                <li>Is maintained by Facebook</li>
-                <li>Powers thousands of enterprise apps, including mobile apps</li>
-            </ul>
+            <header>
+                <nav>
+                    <img src="React-icon.svg.png" width="50px"></img>
+                </nav>
+            </header>
+            <h1>I'm excited to learn React</h1>
+            <ol>
+                <li>I like learning new things</li>
+                <li>It's best fit to learn react for a job
+                as a developer</li>
+            </ol>
+            <footer>
+                <p>© 2023 Soares development. All rights reserved</p>
+            </footer>
         </div>
     )
 }
 
-ReactDOM.render(<TemporaryName />, document.getElementById("root"))
+ReactDOM.render(<Page />, document.getElementById("root"))
