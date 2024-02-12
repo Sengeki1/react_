@@ -1,12 +1,16 @@
 import './App.css';
+import Header from "./Components/Header/Header"
+import MainContent from "./Components/MainContent/MainContent"
+import Footer from "./Components/Footer/Footer"
 
 function App() {
-  return (
-    <div className="App">
-      <h1>Olá React</h1>
-      <p>Meu primeiro App</p>
-    </div>
-  );
+  return ( // JSX
+      <div className="main">
+          <Header />
+          <MainContent />
+          <Footer />
+      </div>
+  )
 }
 
 export default App;
