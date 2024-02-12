@@ -3,10 +3,9 @@ export default function Header () {
         <header>
             <nav className="nav">
                 <img className="img" src="./logo512.png"></img>
+                <h1>ReactFacts</h1>
                 <ul className="nav-items">
-                    <li>Pricing</li>
-                    <li>About</li>
-                    <li>Contact</li>
+                    <li>React Course - Project 1</li>
                 </ul>
             </nav>
         </header>
