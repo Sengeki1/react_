@@ -1,0 +1,60 @@
+.main {
+    text-align: center;
+    position: relative;
+    background-color: rgb(31, 30, 30);
+    height: 100%;
+    width: 100%;
+    color: white;
+}
+
+.profile > img {
+    max-width: 50%;
+    height: 50%;
+    border-radius: 10px;
+}
+
+.btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn > button {
+    width: 15%;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+.btn-1 {
+    background-color: white;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.btn-1:hover {
+    transition: 0.5s;
+    background-color: rgb(155, 64, 64);
+    color: white;
+}
+
+.btn-2 {
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.btn-2:hover {
+    transition: 0.5s;
+    background-color: white;
+    color: black
+}
