@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .main {
     text-align: center;
     position: relative;
@@ -7,10 +13,22 @@
     color: white;
 }
 
-.profile > img {
-    max-width: 50%;
-    height: 50%;
+.profile img {
+    margin-top: 30px;
+    max-width: 440px;
+    height: 440px;
     border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.info h2 {
+    color: gray;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.info p {
+    margin: 20px;
 }
 
 .btn {
