@@ -96,4 +96,5 @@
     align-items: center;
     gap: 10px;
     bottom: 0;
+    cursor: pointer;
 }
