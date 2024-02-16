@@ -1,9 +1,10 @@
 export default function Interests () {
     return (
-        <div>
+        <div className="interests">
             <h2>Interests</h2>
             <p>
-                i like computers and making video games
+                I like computers, making video games<br>
+                </br> and learning new things
             </p>
         </div>
     )
