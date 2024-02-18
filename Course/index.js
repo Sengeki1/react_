@@ -1,4 +1,4 @@
-function Header () { // children Component
+function Header () {
     return (
         <header>
             <nav className="nav">
@@ -13,15 +13,7 @@ function Header () { // children Component
     )
 }
 
-function Footer () { // children Component
-    return (
-        <footer>
-            <p>© 2023 Soares development. All rights reserved</p>
-        </footer>
-    )
-}
-
-function MainContent() { // children Component
+function MainContent () {
     return (
         <div>
             <h1>I'm excited to learn React</h1>
@@ -31,6 +23,14 @@ function MainContent() { // children Component
                 as a developer</li>
             </ol>
         </div>
+    )
+}
+
+function Footer () {
+    return (
+        <footer>
+            <p>© 2023 Soares development. All rights reserved</p>
+        </footer>
     )
 }
 
