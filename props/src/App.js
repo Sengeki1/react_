@@ -1,10 +1,10 @@
 import './App.css';
 
 function App() {
+  const firstName = "Marco"
+  const lastName = "Soares"
   return (
-    <div className="App">
-
-    </div>
+    <h1>Hello {firstName} {lastName}!</h1>
   );
 }
 
