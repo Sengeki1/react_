@@ -1,10 +1,16 @@
 import './Card.css'
 
 export default function Card (props) {
+    let badgeTest
+    if (props.openSpots === 0) {
+        badgeTest = "SOLD OUT"
+    } else if (props.location === "Online") {
+        badgeTest = "ONLINE"
+    } 
     return (
         <div className='card'>
             <div className='profile'>
-                {props.openSpots === 0 && <p>SOLD  OUT</p>}
+                {badgeTest && <p>{badgeTest}</p>}
                 <img src={`./Images/Card/${props.img}`} className="photo"/><br/>
             </div>
             <div className='details'>
