@@ -1,6 +1,7 @@
 .cards-list {
+    justify-content: center;
     display: flex;
     flex-wrap: nowrap;
-    gap: 60px;
+    gap: 30px;
     overflow-x: auto;
 }
