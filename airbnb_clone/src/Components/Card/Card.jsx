@@ -11,11 +11,11 @@ export default function Card (props) {
         <div className='card'>
             <div className='profile'>
                 {badgeTest && <p>{badgeTest}</p>}
-                <img src={`./Images/Card/${props.img}`} className="photo"/><br/>
+                <img src={`./Images/Card/${props.coverImg}`} className="photo"/><br/>
             </div>
             <div className='details'>
                 <img src='./Images/Card/Star 1.png'className="icon"/>
-                <a>{props.rating}<span> ({props.reviewCount}) - {props.location}</span></a>
+                <a>{props.stats.rating}<span> ({props.stats.reviewCount}) - {props.location}</span></a>
             </div>
             <p className='text-1'>{props.title}</p>
             <p className='text-2'><b>From ${props.price}</b> / person</p>
