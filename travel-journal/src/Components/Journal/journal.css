@@ -5,7 +5,7 @@
 
 .journal {
     display: flex;
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 .about-section {
@@ -42,5 +42,21 @@ img {
 .about-section > h1 {
     margin-left: 20px;
     margin-top: 10px;
+}
+
+.about-section > h5 {
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+.about-section > p {
+    margin-left: 20px;
+    margin-top: 10px;
+    text-align: justify;
+    margin-right: 10%;
+}
+
+.hr {
+    margin-top: 40px;
 }
 
