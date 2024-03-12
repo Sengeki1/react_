@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding:  0;
+}
+
+.journal {
+    display: flex;
+    margin-top: 50px;
+}
+
+.about-section {
+    flex-direction: column;
+}
+
+img {
+    width: 300px;
+    border-radius: 15px;
+    margin-left: 10%;
+}
+
+.location {
+    display: flex;
+    margin-top: 15px;
+    flex-direction: row;
+}
+
+.location > i {
+    margin-left: 20px;
+    margin-right: 8px;
+    color: red;
+    font-size: 17px;
+}
+
+.location > h4 {
+    letter-spacing: 2px;
+}
+
+.location > a {
+    margin-left: 20px;
+}
+
+.about-section > h1 {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
