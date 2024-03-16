@@ -4,14 +4,26 @@ import React from "react"
 
 export default function Form () {
 
-    const [memeImage, setMemeImage] = React.useState(" ")
+    // const [memeImage, setMemeImage] = React.useState(" ")
     // useState is a method which allows to change the value of a property it receives a value and a function
-    function pickRandomProperty() {
-        const meme = memesData.data.memes 
-        const randomNumber = Math.floor(Math.random() * meme.length)
-        const { url } = meme[randomNumber] // Object distructuring, gets the item property from the array
+    
+    const [memeImage, setMemeImage] = React.useState({
+        topText: "",
+        bottomText: "",
+        randomImage: "http://i.imgflip.com/1bij.jpg"
+    })
+
+    const [allMemeImages, setAllMemeImages] = React.useState(memesData)
+    
+    function getMemeImage() {
+        const memeArray = allMemeImages.data.memes 
+        const randomNumber = Math.floor(Math.random() * memeArray.length)
+        const { url } = memeArray[randomNumber] // Object distructuring, gets the item property from the array
         
-        setMemeImage(url)
+        setMemeImage(prevMeme => ({
+            ...prevMeme,
+            randomImage: url
+        }))
     }
 
     return (
@@ -27,9 +39,9 @@ export default function Form () {
                     placeholder='Bottom text' 
                     type="text"
                 />
-                <button className='form-button' onClick={pickRandomProperty}>Get a new meme image</button>
+                <button className='form-button' onClick={getMemeImage}>Get a new meme image</button>
             </div>
-            <img src={memeImage} className='meme-image'/>
+            <img src={memeImage.randomImage} className='meme-image'/>
         </main>
     )
 }
