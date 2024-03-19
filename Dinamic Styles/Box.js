@@ -1,10 +1,16 @@
 export default function Box (props) {
     
+    const [on, setOn] = React.useState(props.on)
+
     const styles = {
-        backgroundColor: props.darkMode ? "#222222" : "#cccccc"
+        backgroundColor: on ? "#222222" : "#cccccc"
+    }
+
+    function toggle() {
+        setOn(prevOn => !prevOn)
     }
 
     return (
-        <div style={styles} className="box"></div>
+        <div style={styles} className="box" onClick={toggle}></div>
     )
 }
