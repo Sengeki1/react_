@@ -1,6 +1,4 @@
 export default function Box (props) {
-    
-    const [on, setOn] = React.useState(props.on)
 
     const styles = {
         backgroundColor: on ? "#222222" : "#cccccc"
@@ -9,8 +7,12 @@ export default function Box (props) {
     function toggle() {
         setOn(prevOn => !prevOn)
     }
-
+    // created a inner function to run the function in the parent class instead of modifying it in the child component
     return (
-        <div style={styles} className="box" onClick={toggle}></div>
+        <div 
+            style={styles} 
+            className="box" 
+            onClick={() => props.toggle(props.id)}> 
+        </div>
     )
 }
